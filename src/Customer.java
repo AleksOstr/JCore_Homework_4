@@ -11,12 +11,4 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Customer that = (Customer) obj;
-        if (age != that.age || !phoneNumber.equals(that.phoneNumber)) return false;
-        return Objects.equals(fullName, that.fullName);
-    }
 }
